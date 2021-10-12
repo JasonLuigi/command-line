@@ -15,5 +15,6 @@ echo Hello from the command line
 touch hello-world.txt
 3. Write the command (or commands) that will create a folder named 'my-new-folder' in current directory.
 mkdir my-new-folder
-4. Write the command (or commands) that will attempt to delete a folder named 'my-nonexistent-folder' and display the following message when the commands fails: 'Whoops, cannot delete a folder that does not exist'. rmdir my-nonexistent-folder "rmdir: failed to remove 'my': No such file or directory"
+4. Write the command (or commands) that will attempt to delete a folder named 'my-nonexistent-folder' and display the following message when the commands fails: 'Whoops, cannot delete a folder that does not exist'. 
+rmdir my-nonexistent-folder || echo "Whoops, cannot delete a folder that does not exist"
 5. Write the command (or commands) that will navigate to your desktop, and then to the parent folder of the desktop.
